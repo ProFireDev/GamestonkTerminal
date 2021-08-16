@@ -1,9 +1,9 @@
 """ fundamental_analysis/fa_controller.py tests """
-import io
-import sys
-import unittest
-from contextlib import contextmanager
 from datetime import datetime, timedelta
+from contextlib import contextmanager
+import unittest
+import sys
+import io
 
 from gamestonk_terminal.stocks.fundamental_analysis import fa_controller
 from tests.helpers import check_print

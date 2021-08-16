@@ -2,13 +2,12 @@
 __docformat__ = "numpy"
 
 import argparse
-import os
 from typing import List
-
+import os
 from tabulate import tabulate
 
 from gamestonk_terminal.etf import wsj_model
-from gamestonk_terminal.helper_funcs import export_data, parse_known_args_and_warn
+from gamestonk_terminal.helper_funcs import parse_known_args_and_warn, export_data
 
 
 def show_top_mover(sort_type: str, other_args: List[str]):

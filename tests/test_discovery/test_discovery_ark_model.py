@@ -4,9 +4,10 @@ import unittest
 import vcr
 
 from gamestonk_terminal.stocks.discovery.ark_model import (
-    add_order_total,
     get_ark_orders,
+    add_order_total,
 )
+
 from tests.helpers import check_print
 
 

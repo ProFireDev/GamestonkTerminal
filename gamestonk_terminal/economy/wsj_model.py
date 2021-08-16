@@ -1,7 +1,7 @@
 """WSJ model"""
 __docformat__ = "numpy"
-import pandas as pd
 import requests
+import pandas as pd
 
 
 def us_indices() -> pd.DataFrame:

@@ -1,12 +1,12 @@
 """ops.syncretism.io model"""
 __docformat__ = "numpy"
 
-import configparser
 from typing import Tuple
+import configparser
 
-import pandas as pd
-import requests
 import yfinance as yf
+import requests
+import pandas as pd
 
 from gamestonk_terminal.options import yfinance_model
 

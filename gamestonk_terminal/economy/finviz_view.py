@@ -3,10 +3,8 @@ __docformat__ = "numpy"
 
 import os
 import webbrowser
-
-from PIL import Image
 from tabulate import tabulate
-
+from PIL import Image
 from gamestonk_terminal.economy import finviz_model
 from gamestonk_terminal.helper_funcs import export_data
 

@@ -1,5 +1,5 @@
-import os
 from distutils.util import strtobool
+import os
 
 # Use clear console after each command
 USE_CLEAR_AFTER_CMD = strtobool(os.getenv("GTFF_USE_CLEAR_AFTER_CMD", "False"))

@@ -1,32 +1,34 @@
-import argparse
 from datetime import datetime
+import argparse
 from typing import List
 
-import matplotlib.pyplot as plt
-import matplotlib.ticker as mticker
-import mplfinance as mpf
+
 import pandas as pd
 import pandas_ta as ta
+import mplfinance as mpf
+import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
 import seaborn as sns
-from oandapyV20 import API
-from oandapyV20.endpoints import (
-    accounts,
-    forexlabs,
-    instruments,
-    orders,
-    positions,
-    pricing,
-    trades,
-)
-from oandapyV20.exceptions import V20Error
 
-from gamestonk_terminal import config_plot as cfgPlot
+from oandapyV20 import API
+from oandapyV20.exceptions import V20Error
+from oandapyV20.endpoints import (
+    pricing,
+    accounts,
+    orders,
+    instruments,
+    positions,
+    trades,
+    forexlabs,
+)
+
 from gamestonk_terminal import config_terminal as cfg
+from gamestonk_terminal import config_plot as cfgPlot
 from gamestonk_terminal import feature_flags as gtff
 from gamestonk_terminal.helper_funcs import (
-    check_non_negative,
     parse_known_args_and_warn,
     plot_autoscale,
+    check_non_negative,
 )
 
 client = API(access_token=cfg.OANDA_TOKEN, environment=cfg.OANDA_ACCOUNT_TYPE)

@@ -1,7 +1,5 @@
 import textwrap
-
 import pandas as pd
-
 from gamestonk_terminal.helper_funcs import long_number_format
 
 

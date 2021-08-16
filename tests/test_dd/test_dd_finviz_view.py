@@ -4,6 +4,7 @@ import unittest
 import vcr
 
 from gamestonk_terminal.stocks.due_diligence.finviz_view import analyst
+
 from tests.helpers import check_print
 
 

@@ -1,9 +1,8 @@
 """Screener model"""
 __docformat__ = "numpy"
 
-import configparser
 import os
-
+import configparser
 import pandas as pd
 
 

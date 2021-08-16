@@ -3,8 +3,8 @@ __docformat__ = "numpy"
 
 from typing import List, Tuple
 
-import pandas as pd
 import requests
+import pandas as pd
 from bs4 import BeautifulSoup as bs
 
 

@@ -1,30 +1,26 @@
 """Helper functions"""
 __docformat__ = "numpy"
 import argparse
+from typing import List
+from datetime import datetime, timedelta, time as Time
 import os
 import random
 import re
 import sys
-from datetime import datetime
-from datetime import time as Time
-from datetime import timedelta
-from typing import List
-
+import pandas as pd
+from pytz import timezone
+from prettytable import PrettyTable
 import iso8601
 import matplotlib
 import matplotlib.pyplot as plt
-import pandas as pd
-import pandas.io.formats.format
-from colorama import Fore, Style
 from holidays import US as holidaysUS
+from colorama import Fore, Style
 from pandas._config.config import get_option
 from pandas.plotting import register_matplotlib_converters
-from prettytable import PrettyTable
-from pytz import timezone
+import pandas.io.formats.format
 from screeninfo import get_monitors
-
-from gamestonk_terminal import config_plot as cfgPlot
 from gamestonk_terminal import feature_flags as gtff
+from gamestonk_terminal import config_plot as cfgPlot
 
 register_matplotlib_converters()
 if cfgPlot.BACKEND is not None:

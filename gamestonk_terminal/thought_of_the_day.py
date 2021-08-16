@@ -1,10 +1,9 @@
 """ Thought of The Day """
 __docformat__ = "numpy"
 
-import random
 import re
+import random
 from typing import Dict
-
 import requests
 from bs4 import BeautifulSoup
 

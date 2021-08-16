@@ -1,10 +1,10 @@
 """Tradier options model"""
 __docformat__ = "numpy"
 
-from typing import List, Optional
+from typing import Optional, List
 
-import pandas as pd
 import requests
+import pandas as pd
 
 from gamestonk_terminal import config_terminal as cfg
 

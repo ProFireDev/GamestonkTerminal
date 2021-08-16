@@ -1,32 +1,31 @@
 """Terminal helper"""
 __docformat__ = "numpy"
-import hashlib
 import os
-import random
-import subprocess
 import sys
+import subprocess
+import random
 from datetime import datetime
-
+import hashlib
+import requests
+from colorama import Fore, Style
 import matplotlib.pyplot as plt
 import pandas as pd
-import praw
-import pyEX
-import quandl
-import requests
 from alpha_vantage.timeseries import TimeSeries
+import quandl
 from coinmarketcapapi import CoinMarketCapAPI, CoinMarketCapAPIError
-from colorama import Fore, Style
-from prawcore.exceptions import ResponseException
+import pyEX
 from pyEX.common.exception import PyEXception
 from tabulate import tabulate
-
-from gamestonk_terminal import config_terminal as cfg
-from gamestonk_terminal import feature_flags as gtff
-from gamestonk_terminal import thought_of_the_day as thought
+import praw
+from prawcore.exceptions import ResponseException
 
 # import git
 
 # pylint: disable=no-member,too-many-branches,C0302
+
+from gamestonk_terminal import config_terminal as cfg
+from gamestonk_terminal import feature_flags as gtff
+from gamestonk_terminal import thought_of_the_day as thought
 
 
 # pylint: disable=too-many-statements

@@ -1,9 +1,9 @@
 """FDScanner model"""
 __docformat__ = "numpy"
 
-import numpy as np
-import pandas as pd
 import requests
+import pandas as pd
+import numpy as np
 
 
 def unusual_options(num: int, sort_column: str, ascending: bool):

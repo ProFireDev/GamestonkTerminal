@@ -1,8 +1,7 @@
 """Calculator Model"""
 ___docformat__ = "numpy"
 
-from typing import Dict, Tuple
-
+from typing import Tuple, Dict
 import numpy as np
 
 

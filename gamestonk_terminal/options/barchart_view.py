@@ -2,11 +2,9 @@
 __docformat__ = "numpy"
 
 import os
-
 from tabulate import tabulate
-
-from gamestonk_terminal.helper_funcs import export_data
 from gamestonk_terminal.options import barchart_model
+from gamestonk_terminal.helper_funcs import export_data
 
 
 def print_options_data(ticker: str, export: str):
